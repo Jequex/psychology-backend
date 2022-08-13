@@ -1,6 +1,7 @@
 # Getting Started
 
 This project is a node js project for testing if a user is an introvert or an extrovert
+`note: You need to create an env file using the example file` in order to be able to run the application
 
 ## Available Scripts
 
