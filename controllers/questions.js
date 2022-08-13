@@ -1,6 +1,6 @@
-const {SERVER_ERROR_CODE, SERVER_ERROR_MESSAGE} = require('../utils/constants');
-const {writeError} = require('../utils/functions');
-const questions = require('../data/questions.json');
+const {SERVER_ERROR_CODE, SERVER_ERROR_MESSAGE} = require("../utils/constants");
+const {writeError} = require("../utils/functions");
+const questions = require("../data/questions.json");
 
 // returns all questions
 exports.getQuestions = async (req, res) => {
@@ -15,8 +15,12 @@ exports.getQuestions = async (req, res) => {
 
 // takes answers and returns result
 exports.submitQuestions = async (req, res) => {
+  const {answers} = req.body;
+
   try {
-    const data = [];
+    const data = answers.filter((answer) => answer === "introvert").
+      length >= 3 ?
+      "you are an introvert" : "you are an extrovert";
     res.send(data);
   } catch (error) {
     writeError(error);

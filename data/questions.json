@@ -2,6 +2,56 @@
   {
     "number": 1,
     "question": "What do you want to do?",
-    "answers": []
+    "answers": [
+      {"answer": "you eat food", "value": "introvert", "number": 1},
+      {"answer": "you shout out", "value": "extrovert", "number": 2},
+      {"answer": "you drink water", "value": "extrovert", "number": 3},
+      {"answer": "you go camping", "value": "introvert", "number": 4},
+      {"answer": "you sleep", "value": "extrovert", "number": 5}
+    ]
+  },
+  {
+    "number": 2,
+    "question": "How do you want to do?",
+    "answers": [
+      {"answer": "you eat food", "value": "introvert", "number": 1},
+      {"answer": "you shout out", "value": "extrovert", "number": 2},
+      {"answer": "you drink water", "value": "extrovert", "number": 3},
+      {"answer": "you go camping", "value": "introvert", "number": 4},
+      {"answer": "you sleep", "value": "extrovert", "number": 5}
+    ]
+  },
+  {
+    "number": 3,
+    "question": "What do you want to do?",
+    "answers": [
+      {"answer": "you eat food", "value": "introvert", "number": 1},
+      {"answer": "you shout out", "value": "extrovert", "number": 2},
+      {"answer": "you drink water", "value": "extrovert", "number": 3},
+      {"answer": "you go camping", "value": "introvert", "number": 4},
+      {"answer": "you sleep", "value": "extrovert", "number": 5}
+    ]
+  },
+  {
+    "number": 4,
+    "question": "How do you want to do?",
+    "answers": [
+      {"answer": "you eat food", "value": "introvert", "number": 1},
+      {"answer": "you shout out", "value": "extrovert", "number": 2},
+      {"answer": "you drink water", "value": "extrovert", "number": 3},
+      {"answer": "you go camping", "value": "introvert", "number": 4},
+      {"answer": "you sleep", "value": "extrovert", "number": 5}
+    ]
+  },
+  {
+    "number": 5,
+    "question": "What do you want to do?",
+    "answers": [
+      {"answer": "you eat food", "value": "introvert", "number": 1},
+      {"answer": "you shout out", "value": "extrovert", "number": 2},
+      {"answer": "you drink water", "value": "extrovert", "number": 3},
+      {"answer": "you go camping", "value": "introvert", "number": 4},
+      {"answer": "you sleep", "value": "extrovert", "number": 5}
+    ]
   }
 ]
