@@ -1,6 +1,6 @@
-const path = require('path');
-const fsPromises = require('fs').promises;
-const fs = require('fs');
+const path = require("path");
+const fsPromises = require("fs").promises;
+const fs = require("fs");
 
 // write error logs
 exports.writeError = async (error) => {
@@ -13,8 +13,8 @@ exports.writeError = async (error) => {
   const fileExists = fs.existsSync(
     path.join(
       __dirname,
-      '..',
-      'logs',
+      "..",
+      "logs",
       `${date}_${month}_${year}_errors.log`,
     ),
   );
@@ -22,14 +22,14 @@ exports.writeError = async (error) => {
     fsPromises.writeFile(
       path.join(
         __dirname,
-        '..',
-        'logs',
+        "..",
+        "logs",
         `${date}_${month}_${year}_errors.log`,
       ),
       `${JSON.stringify(
         {
           time: `${hours}:${minutes}:${seconds}`,
-          error,
+          error: error.message,
         },
       )} \n`,
     );
@@ -37,14 +37,14 @@ exports.writeError = async (error) => {
     fsPromises.appendFile(
       path.join(
         __dirname,
-        '..',
-        'logs',
+        "..",
+        "logs",
         `${date}_${month}_${year}_errors.log`,
       ),
       `${JSON.stringify(
         {
           time: `${hours}:${minutes}:${seconds}`,
-          error,
+          error: error.message,
         },
       )} \n`,
     );

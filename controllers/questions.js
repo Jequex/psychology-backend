@@ -19,7 +19,7 @@ exports.submitQuestions = async (req, res) => {
 
   try {
     const data = answers.filter((answer) => answer === "introvert").
-      length >= 3 ?
+      length > answers.length / 2 ?
       "you are an introvert" : "you are an extrovert";
     res.send(data);
   } catch (error) {
